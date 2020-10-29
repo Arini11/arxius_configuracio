@@ -17,7 +17,7 @@ export PATH=$PATH:~/scripts/
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1="\[\e[0;31m\][\[\e[0;33m\]\u\[\e[0;32m\]@\[\e[0;36m\]\h \[\e[0;32m\]\W\[\e[0;31m\]]\[\e[0;37m\]$ \[\e[0m\]"
 
 # Per a poder utilitzar la tecla "supr" a la línia d'ordres
 tput smkx
